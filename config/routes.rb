@@ -1,4 +1,7 @@
 Johnbentcope::Application.routes.draw do |map|
+  get "index/index"
+  
+  map.root :controller => "index", :action => "index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
