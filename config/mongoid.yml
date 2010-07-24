@@ -1,0 +1,18 @@
+defaults: &defaults
+  host: flame.mongohq.com
+  port: 27092
+  username: johnbentcope
+  password: password
+  database: johnbentcope
+  
+development:
+  <<: *defaults
+#  database: hello_johnbentcope_development
+
+test:
+  <<: *defaults
+#  database: hello_johnbentcope_test
+
+# set these environment variables on your prod server
+production:
+  <<: *defaults
