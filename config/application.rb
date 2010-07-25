@@ -41,7 +41,7 @@ module Johnbentcope
     # end
 
     config.generators do |g|
-      g.orm :mongomapper
+      g.orm :mongoid
     end
     
     # Configure the default encoding used in templates for Ruby 1.9.
