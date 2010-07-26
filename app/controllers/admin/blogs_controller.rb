@@ -1,4 +1,7 @@
 class Admin::BlogsController < ApplicationController
+
+  before_filter :authentication_check
+
   # GET /blogs
   # GET /blogs.xml
   def index
@@ -80,4 +83,5 @@ class Admin::BlogsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+    
 end
