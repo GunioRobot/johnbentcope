@@ -1,4 +1,6 @@
 Johnbentcope::Application.routes.draw do |map|
+  resources :blogs
+
   get "index/index"
   
   get "index/links"
