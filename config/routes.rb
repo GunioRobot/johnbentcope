@@ -1,6 +1,6 @@
 Johnbentcope::Application.routes.draw do |map|
 
-  resources :blogs
+  resources :blogs, :only => [:index, :show]
 
   namespace :admin do
     resources :blogs
