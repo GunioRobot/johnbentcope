@@ -1,5 +1,10 @@
 Johnbentcope::Application.routes.draw do |map|
+
   resources :blogs
+
+  namespace :admin do
+    resources :blogs
+  end
 
   get "index/index"
   
