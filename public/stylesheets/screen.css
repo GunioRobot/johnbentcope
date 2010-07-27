@@ -1,9 +1,39 @@
-body { font-family: 'Avant Garde', 'Century Gothic', sans-serif; background-color: rgb(255, 156, 13);}
-ul#nav { list-style: none; }
-li { color: rgb(255, 195, 107); font-size: 4em; font-weight: 100;}
-li.selected { color: white; }
-p{ color: white; font-size: 1em; font-weight: 50;}
-a, a:link{text-decoration: none; color: rgb(255, 195, 107)}
-a:visited{color: rgb(255, 195, 107)}
-a:hover{color: rgb(148, 211, 255)}
-img.top-left-background { position: absolute; bottom: 0px; right: 0px; }
+body {
+	font-family: 'Avant Garde', 'Century Gothic',sans-serif;
+	background-color: rgb(255, 156, 13);
+}
+
+ul#nav {
+	list-style: none;
+	line-height:500%;
+}
+
+li {
+	color: rgb(255, 195, 107);
+	font-size: 4em; font-weight: 100;
+}
+
+li.selected {
+	color: white;
+}
+
+p{
+	color: white;
+	font-size: 1em;
+	font-weight: 50;
+}
+
+a, a:link{
+	text-decoration: none;
+	color: rgb(255, 195, 107)
+}
+a:visited{
+	color: rgb(255, 195, 107)
+}
+a:hover{
+	color: rgb(148, 211, 255)
+}
+
+img.top-left-background {
+  position: absolute; bottom: 0px; right: 0px;
+}
