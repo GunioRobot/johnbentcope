@@ -28,3 +28,18 @@ gem "mongoid", ">= 2.0.0.beta9"
 # group :test do
 #   gem 'webrat'
 # end
+
+group :test do
+  gem 'nokogiri', '1.4.1'
+  gem 'cucumber'
+  gem 'cucumber-rails'
+  gem 'culerity'
+  gem 'celerity', :require => nil # JRuby only. Make it available but don't require it in any environment.
+  gem "capybara"
+  gem "launchy"
+  gem "rspec-rails",        ">= 2.0.0.beta.10", :git => "git://github.com/rspec/rspec-rails.git"
+  gem "rspec",              ">= 2.0.0.beta.10", :git => "git://github.com/rspec/rspec.git"
+  gem "rspec-core",         ">= 2.0.0.beta.10", :git => "git://github.com/rspec/rspec-core.git"
+  gem "rspec-expectations", ">= 2.0.0.beta.10", :git => "git://github.com/rspec/rspec-expectations.git"
+  gem "rspec-mocks",        ">= 2.0.0.beta.10", :git => "git://github.com/rspec/rspec-mocks.git"
+end
