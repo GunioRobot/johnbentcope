@@ -1,4 +1,11 @@
 Johnbentcope::Application.routes.draw do |map|
+
+  resources :blogs, :only => [:index, :show]
+
+  namespace :admin do
+    resources :blogs
+  end
+
   get "index/index"
   
   get "index/links"

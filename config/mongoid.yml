@@ -1,6 +1,6 @@
 defaults: &defaults
   host: flame.mongohq.com
-  port: 27092
+  port: 27070
   username: johnbentcope
   password: password
   database: johnbentcope
