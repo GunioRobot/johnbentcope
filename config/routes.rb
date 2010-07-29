@@ -7,7 +7,7 @@ Johnbentcope::Application.routes.draw do |map|
   end
 
   get "index/index"
-  
+  get "blogs/show"
   get "index/links"
   
   map.root :controller => "index", :action => "index"
