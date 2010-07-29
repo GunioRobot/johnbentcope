@@ -1,12 +1,13 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.0.beta4'
+gem 'bundler', '>= 1.0.0.rc.1'
+gem 'rails', '3.0.0.rc'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mongo'
-gem "mongoid", ">= 2.0.0.beta9"
+gem "mongoid", ">= 2.0.0.beta.14"
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -19,7 +20,7 @@ gem "mongoid", ">= 2.0.0.beta9"
 
 # Bundle the extra gems:
 # gem 'bj'
-# gem 'nokogiri', '1.4.1'
+# gem 'nokogiri', '1.4.2'
 # gem 'sqlite3-ruby', :require => 'sqlite3'
 # gem 'aws-s3', :require => 'aws/s3'
 
@@ -30,7 +31,7 @@ gem "mongoid", ">= 2.0.0.beta9"
 # end
 
 group :test do
-  gem 'nokogiri', '1.4.1'
+  gem 'nokogiri'
   gem 'cucumber'
   gem 'cucumber-rails'
   gem 'culerity'
