@@ -35,5 +35,7 @@ a:hover{
 }
 
 img.top-left-background {
-  position: absolute; bottom: 0px; right: 0px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
 }

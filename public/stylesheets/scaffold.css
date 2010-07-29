@@ -1,4 +1,4 @@
-body { background-color: #fff; color: #333; }
+body { background-color: #000; color: #333; }
 
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
@@ -7,14 +7,13 @@ body, p, ol, ul, td {
 }
 
 pre {
-  background-color: #eee;
   padding: 10px;
   font-size: 11px;
 }
 
 a { color: #000; }
-a:visited { color: #666; }
-a:hover { color: #fff; background-color:#000; }
+	a:visited { color: #666; }
+	a:hover { color: #fff; }
 
 div.field, div.actions {
   margin-bottom: 10px;
