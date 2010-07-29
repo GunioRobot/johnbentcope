@@ -6,7 +6,7 @@ gem 'rails', '3.0.0.beta4'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mongo'
-gem "mongoid", ">= 2.0.0.beta.13"
+gem "mongoid", ">= 2.0.0.beta.12"
 
 # Use unicorn as the web server
 # gem 'unicorn'
