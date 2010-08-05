@@ -1,6 +1,36 @@
 Johnbentcope::Application.routes.draw do |map|
 
   resources :blogs, :only => [:index, :show]
+	
+	resources :blogs do
+  	collection do
+  	  get :photography
+  	end
+	end
+
+	resources :blogs do
+  	collection do
+  	  get :inspiration
+  	end
+	end
+
+	resources :blogs do
+  	collection do
+  	  get :music
+  	end
+	end
+
+	resources :blogs do
+  	collection do
+  	  get :design
+  	end
+	end
+
+	resources :blogs do
+  	collection do
+  	  get :search
+  	end
+	end
 
   namespace :admin do
     resources :blogs
