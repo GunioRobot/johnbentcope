@@ -37,13 +37,6 @@ module Johnbentcope
     #   g.test_framework  :test_unit, :fixture => true
     # end
 
-<<<<<<< HEAD
-    config.generators do |g|
-      g.orm :mongoid
-    end
-    
-=======
->>>>>>> 72090db... Switched to MongoHQ.
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
 

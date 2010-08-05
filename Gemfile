@@ -5,12 +5,7 @@ gem 'rails', '3.0.0.beta4'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-<<<<<<< HEAD
-gem 'mongo'
-gem "mongoid", ">= 2.0.0.beta.12"
-=======
 gem 'sqlite3-ruby', :require => 'sqlite3'
->>>>>>> 72090db... Switched to MongoHQ.
 
 # Use unicorn as the web server
 # gem 'unicorn'

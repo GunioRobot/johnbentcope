@@ -1,4 +1,2 @@
-class Blog
-  include Mongoid::Document
-  field :title, :type => String
+class Blog < ActiveRecord::Base
 end
