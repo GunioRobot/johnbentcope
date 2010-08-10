@@ -1,80 +1,99 @@
 body {
 	font-family: 'Avant Garde', 'Century Gothic',sans-serif;
 	background-color: rgb(255, 156, 13);
+	background-image: url('/images/orchid_dew_adjusted.jpg');
 	margin: 0;
 	padding: 0;
 
 }
-/*
-	#content {
+	.bg_image {
+		
+	}
+
+	.sidebar {
 		position: relative;
+		z-index: 1;
 		padding: 10px;
+		width: 200px;
 		margin-top: 40px;
 		margin-left: 40px;
-		background: #FFF;
-		background-position: top left;
-		background-repeat: no-repeat;
-		opacity: 100%;
-	  z-index: 1;
-		/*background: transparent;/
-
 	}
-
-	.content-background {
-		position: absolute:
-		top: 0
-		right: 0;
-		bottom: 0;
-		left: 0;
-		background: #FFF;
-		color: #FFF;
-		opacity: 0.75;
-	  margin-left: auto;
-	  margin-right: auto;
-		z-index:-1
-	/*	margin:5;
-		background:#FFF;/
-	} */
-
-.content {
-  position: relative;
-  border: 4px dotted red;
-  z-index: 1;
-  padding: 10px;
-  width: 200px;
-  margin-top: 40px;
-  margin-left: 40px;
-}
-.content-background {
-  border: 4px dashed green;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: #FFF;
-  color: #FFF;
-  opacity: 0.75;
-  z-index: -1;
-}
-	
-	#postgrid {
-	
-	}
-	.blog-item-background {
-		position: absolute:
+	.sidebar-background {
+		position: absolute;
 		top: 0;
 		right: 0;
 		bottom: 0;
 		left: 0;
 		background: #FFF;
 		color: #FFF;
+		opacity: 0.55;
+		z-index: -1;
 	}
-
-	.blog-item {
-		position: relative;
+	
+	.link {
+		color: black;
 	}
+	
+	#blog-items {
+		position: absolute;
+		top: -10px;
+		left: 250px;
+		z-index: 1;
+		
+		margin: 50px 0 0 50px;
+		width: 630px;
+	}
+		.blog-item {
+			position: relative;
+			z-index: 1;
+			padding: 10px;
+			float: left;
+			width: 175px;
+			height: 150px;
+			margin: 0 15px 15px 0;
+			font-size: 2em;
+			line-height: 100%;
+			color: rgb(176, 102, 0);
+		}
 
+		.blog-item-background {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: #FFF;
+			color: #FFF;
+			opacity: 0.55;
+			z-index: -1;
+		}
+
+		.blog-page-nav {
+			position: relative;
+			z-index: 1;
+			padding: 5px;
+			float: left;
+			margin: 0 15px 15px 0;
+			font-size: 1.5em;
+			line-height: 100%;
+			color: rgb(176, 102, 0);
+		}
+		
+		.blog-nav-background {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: #FFF;
+			color: #FFF;
+			opacity: 0.55;
+			z-index: -1;
+		}
+
+	#search {
+  	margin: 28px 0 30px 14px;
+  }
 
 ul#nav {
 	list-style: none;
@@ -92,9 +111,10 @@ li.selected {
 
 li.categoryitem {
 	list-style: none;
-	color: white;
+	color: rgb(176,102,0);
 	line-height: 100%;
-	font-size:1em; font-weight: 100;
+	font-size:1em;
+	font-weight: 100;
 }
 
 p{
@@ -105,13 +125,26 @@ p{
 
 a, a:link{
 	text-decoration: none;
-	color: rgb(255, 195, 107)
+	color: rgb(255, 195, 107);
 }
 a:visited{
-	color: rgb(255, 195, 107)
+	color: rgb(255, 195, 107);
 }
 a:hover{
-	color: rgb(148, 211, 255)
+	color: rgb(148, 211, 255);
+}
+
+a.categories:link {
+	text-decoration: none;
+	color: rgb(240, 240, 240);
+}
+
+a.categories:visited {
+	color: rgb(240, 240, 240);
+}
+
+a.categories:hover {
+	color: black;
 }
 
 img.top-left-background {
@@ -122,7 +155,4 @@ img.top-left-background {
 
 #left_sidebar {
 			width: 200px;
-			position: relative;
-			float: left;
-			overflow: hidden;
 		}
