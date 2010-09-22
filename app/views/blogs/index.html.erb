@@ -1,17 +1,48 @@
-<h1>Listing blogs</h1>
+<body>
+	<div class="sidebar"> 
+		<div id="left_sidebar">
+					<a class="noborder"><img src="/images/avatar.jpg" width="200" height="200" /></a>
+		
+				<div class="padd">
+					This blog is a personal collection on design, my inspiration, photography and music.
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @blogs.each do |blog| %>
-  <tr>
-    <td><%= blog.title %></td>
-    <td><%= link_to 'Show', blog %></td>
-  </tr>
-<% end %>
-</table>
+				</div>
+		
+				<div class="search">
+				  <form id="form_search" action="http://blog.johnbentcope.com/index.php" method="get">
+				 		<div>
+				  		<input value="" name="s" id="s" class="search"> <a href="javascript:document.getElementById('form_search').submit();">Search</a>
+							</div>
+						</form>
+					</div>
+		
+				<div class="padd">
+					<strong>Categories</strong>
+				  <ul>
+					<li><%= link_to "design", design_blogs_path, :id => 'designblog', :class => "blognav" %></li>
+					<li><%= link_to "inspiration", inspiration_blogs_path, :id => 'inspirationblog', :class => "blognav" %></li>
+					<li><%= link_to "photography", photography_blogs_path, :id => 'photographyblog', :class => "blognav" %></li>
+					<li><%= link_to "music", music_blogs_path, :id => 'musicblog', :class => "blognav" %></li>
+					<li><%= link_to "projects", projects_blogs_path, :id => 'projectsblog', :class => "blognav" %></li>
+				 	 </ul>
+			</div>
+		</div>
+		<div class="sidebar-background">.</div>
+	</div>
+	<div id="blog-items"> 
+	<div class="blog-item">
+		<% @blogs.each do |blog| %>
+		<tr>
+		<td><%= blog.title %></td>
+		<td><%= link_to'Show',blog %></td>
+		</tr>
+		<% end %>
+		<div class="blog-item-background">.</div>
+	</div>
+ 
+		<div class="blog-page-nav">  
+		Older posts?
+		<div class="blog-nav-background">.</div> 
+		</div>     
+  </div> 
+</body>
