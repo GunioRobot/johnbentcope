@@ -1,0 +1,80 @@
+From 72090db64a1d6e7e694531276a17006e144028e2 Mon Sep 17 00:00:00 2001
+From: Ryan Alyn Porter <rap@endymion.com>
+Date: Sat, 24 Jul 2010 17:11:55 -0400
+Subject: [PATCH] Switched to MongoHQ.
+
+---
+ Gemfile               |    3 ++-
+ config/application.rb |    9 ++++++++-
+ config/mongoid.yml    |   18 ++++++++++++++++++
+ 3 files changed, 28 insertions(+), 2 deletions(-)
+ create mode 100644 config/mongoid.yml
+
+diff --git a/Gemfile b/Gemfile
+index ed9e0a7..3da740b 100644
+--- a/Gemfile
++++ b/Gemfile
+@@ -5,7 +5,8 @@ gem 'rails', '3.0.0.beta4'
+ # Bundle edge Rails instead:
+ # gem 'rails', :git => 'git://github.com/rails/rails.git'
+ 
+-gem 'sqlite3-ruby', :require => 'sqlite3'
++gem 'mongo'
++gem "mongoid", ">= 2.0.0.beta9"
+ 
+ # Use unicorn as the web server
+ # gem 'unicorn'
+diff --git a/config/application.rb b/config/application.rb
+index c9240b8..9934ba9 100644
+--- a/config/application.rb
++++ b/config/application.rb
+@@ -1,6 +1,9 @@
+ require File.expand_path('../boot', __FILE__)
+ 
+-require 'rails/all'
++require "action_controller/railtie"
++require "action_mailer/railtie"
++require "active_resource/railtie"
++require "rails/test_unit/railtie"
+ 
+ # If you have a Gemfile, require the gems listed there, including any gems
+ # you've limited to :test, :development, or :production.
+@@ -37,6 +40,10 @@ module Johnbentcope
+     #   g.test_framework  :test_unit, :fixture => true
+     # end
+ 
++    config.generators do |g|
++      g.orm :mongomapper
++    end
++    
+     # Configure the default encoding used in templates for Ruby 1.9.
+     config.encoding = "utf-8"
+ 
+diff --git a/config/mongoid.yml b/config/mongoid.yml
+new file mode 100644
+index 0000000..7bded46
+--- /dev/null
++++ b/config/mongoid.yml
+@@ -0,0 +1,18 @@
++defaults: &defaults
++  host: flame.mongohq.com
++  port: 27092
++  username: johnbentcope
++  password: password
++  database: johnbentcope
++  
++development:
++  <<: *defaults
++#  database: hello_johnbentcope_development
++
++test:
++  <<: *defaults
++#  database: hello_johnbentcope_test
++
++# set these environment variables on your prod server
++production:
++  <<: *defaults
+\ No newline at end of file
+-- 
+1.6.5.2
+
