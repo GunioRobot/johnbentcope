@@ -4,7 +4,7 @@ Johnbentcope::Application.routes.draw do |map|
 	
 	resources :blogs do
   	collection do
-  	  get :photography
+  	  get :design
   	end
 	end
 
@@ -16,16 +16,22 @@ Johnbentcope::Application.routes.draw do |map|
 
 	resources :blogs do
   	collection do
-  	  get :music
+  	  get :photography
   	end
 	end
 
 	resources :blogs do
   	collection do
-  	  get :design
+  	  get :music
   	end
 	end
-
+	
+	resources :blogs do
+		collection do
+			get :projects
+		end
+	end
+	
 	resources :blogs do
   	collection do
   	  get :search

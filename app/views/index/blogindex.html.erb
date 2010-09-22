@@ -19,20 +19,15 @@
 				<div class="padd">
 					<strong>Categories</strong>
 				  <ul>
-				   	<li class="categoryitem"><a href="http://blog.johnbentcope.com/category/design/" title="Interior, Industrial, Graphic; It's all here">design</a> (3)
-							</li>
-						<li class="categoryitem"><a href="http://blog.johnbentcope.com/category/inspiration/" title="Anything I find that sparks my creativity">inspiration</a> (48)
-							</li>
-						<li class="categoryitem"><a href="http://blog.johnbentcope.com/category/photography/" title="It's what I do">photography</a> (13)
-							</li>
-						<li class="categoryitem"><a href="http://blog.johnbentcope.com/category/music/" title="We can't live in silence">music</a> (14)
-							</li>
-						<li class="categoryitem"><a href="http://blog.johnbentcope.com/category/projects/" title="Things in progress and things in my dreams">projects</a> (18)
-							</li>
-				 	  </ul>
+					<li><%= link_to "design", design_blogs_path, :id => 'designblog', :class => "blognav" %></li>
+					<li><%= link_to "inspiration", inspiration_blogs_path, :id => 'inspirationblog', :class => "blognav" %></li>
+					<li><%= link_to "photography", photography_blogs_path, :id => 'photographyblog', :class => "blognav" %></li>
+					<li><%= link_to "music", music_blogs_path, :id => 'musicblog', :class => "blognav" %></li>
+					<li><%= link_to "projects", projects_blogs_path, :id => 'projectsblog', :class => "blognav" %></li>
+				 	 </ul>
 			</div>
 		</div>
-		<!--<div class="sidebar-background">.</div> -->
+		<div class="sidebar-background">.</div>
 	</div>
 	<div id="blog-items"> 
     <div class="blog-item"> 

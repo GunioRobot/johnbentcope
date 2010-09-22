@@ -101,7 +101,6 @@ ul#nav {
 }
 
 li {
-	list-style: none;
 	color: rgb(255, 195, 107);
 	font-size: 4em; font-weight: 100;
 }
@@ -116,6 +115,7 @@ li.categoryitem {
 	line-height: 100%;
 	font-size:1em;
 	font-weight: 100;
+	margin: 10px 0px 0px 0px;
 }
 
 p{
@@ -126,7 +126,6 @@ p{
 
 a, a:link{
 	text-decoration: none;
-	list-style: none;
 	color: rgb(255, 195, 107);
 }
 a:visited{
@@ -136,17 +135,17 @@ a:hover{
 	color: rgb(148, 211, 255);
 }
 
-a.blognav:link {
+a.categories:link {
 	text-decoration: none;
-	list-style: none;
-	line-height: .25em;
-	font-size: .3em;
-	color: rgb(176, 102, 0);
+	color: rgb(000, 240, 240);
 }
 
-a.blognav:visited {
-	font-size: .3em;
-	color: rgb(176, 102, 0);
+a.categories:visited {
+	color: rgb(240, 000, 240);
+}
+
+a.categories:hover {
+	color: black;
 }
 
 img.top-left-background {
