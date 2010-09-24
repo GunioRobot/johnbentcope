@@ -22,6 +22,9 @@ group :test do
   gem "capybara"
   gem "launchy"
 
+  gem 'acts-as-taggable-on'
+  gem 'formtastic', '~>1.1.0'
+
   gem "rspec-rails", ">= 2.0.0.beta.17"  
   # gem "rspec-rails",        ">= 2.0.0.beta.10", :git => "git://github.com/rspec/rspec-rails.git"
   # gem "rspec",              ">= 2.0.0.beta.10", :git => "git://github.com/rspec/rspec.git"

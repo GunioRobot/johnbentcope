@@ -28,6 +28,7 @@ GEM
       activemodel (= 3.0.0)
       activesupport (= 3.0.0)
     activesupport (3.0.0)
+    acts-as-taggable-on (2.0.6)
     arel (1.0.1)
       activesupport (~> 3.0.0)
     builder (2.1.2)
@@ -54,6 +55,10 @@ GEM
       abstract (>= 1.0.0)
     ffi (0.6.3)
       rake (>= 0.8.7)
+    formtastic (1.1.0)
+      actionpack (>= 2.3.0)
+      activesupport (>= 2.3.0)
+      i18n (>= 0.4.0)
     gherkin (2.1.5)
       trollop (~> 1.16.2)
     i18n (0.4.1)
@@ -118,11 +123,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  acts-as-taggable-on
   capybara
   celerity
   cucumber
   cucumber-rails
   culerity
+  formtastic (~> 1.1.0)
   launchy
   nokogiri
   rails (= 3.0.0)
