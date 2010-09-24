@@ -5,7 +5,7 @@ gem 'rails', '3.0.0'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
 # To use debugger
-# gem 'ruby-debug'
+gem 'ruby-debug', "= 0.10.0"
 
 # Bundle the extra gems:
 # gem 'bj'
