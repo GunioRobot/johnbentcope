@@ -11,6 +11,9 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # gem 'bj'
 # gem 'aws-s3', :require => 'aws/s3'
 
+gem 'acts-as-taggable-on'
+gem 'formtastic', '>= 1.1.0', :git => "http://github.com/justinfrench/formtastic.git"
+
 # Bundle gems for certain environments:
 
 group :test do
@@ -22,15 +25,7 @@ group :test do
   gem "capybara"
   gem "launchy"
 
-  gem 'acts-as-taggable-on'
-  gem 'formtastic', '~>1.1.0'
-
   gem "rspec-rails", ">= 2.0.0.beta.17"  
-  # gem "rspec-rails",        ">= 2.0.0.beta.10", :git => "git://github.com/rspec/rspec-rails.git"
-  # gem "rspec",              ">= 2.0.0.beta.10", :git => "git://github.com/rspec/rspec.git"
-  # gem "rspec-core",         ">= 2.0.0.beta.10", :git => "git://github.com/rspec/rspec-core.git"
-  # gem "rspec-expectations", ">= 2.0.0.beta.10", :git => "git://github.com/rspec/rspec-expectations.git"
-  # gem "rspec-mocks",        ">= 2.0.0.beta.10", :git => "git://github.com/rspec/rspec-mocks.git"
 
   gem 'webrat',             ">= 0.7.2.beta.1"
 end
