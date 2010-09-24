@@ -1,4 +1,5 @@
 class Admin::BlogsController < ApplicationController
+  layout 'admin'
 
   before_filter :authentication_check
 
