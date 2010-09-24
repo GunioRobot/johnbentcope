@@ -2,56 +2,17 @@ Johnbentcope::Application.routes.draw do |map|
 
   resources :blogs, :only => [:index, :show]
 	
-	resources :blogs do
-  	collection do
-  	  get :design
-  	end
-	end
-
-	resources :blogs do
-  	collection do
-  	  get :inspiration
-  	end
-	end
-
-	resources :blogs do
-  	collection do
-  	  get :photography
-  	end
-	end
-
-	resources :blogs do
-  	collection do
-  	  get :music
-  	end
-	end
-	
-	resources :blogs do
-		collection do
-			get :projects
-		end
-	end
-	
-	resources :blogs do
-  	collection do
-  	  get :search
-  	end
-	end
-
   namespace :admin do
     resources :blogs
   end
 
   get "index/index"
-  get "blogs/show"
   get "index/links"
-  
-  get"blogs/index"
-	get"blogs/show"
-  
+    
   get"index/portfolioindex"
   
   map.root :controller => "index", :action => "index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
