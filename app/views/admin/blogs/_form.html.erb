@@ -1,21 +1,11 @@
-<%= form_for(@blog, :url => admin_blog_path(@blog)) do |f| %>
-  <% if @blog.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@blog.errors.count, "error") %> prohibited this blog from being saved:</h2>
+<% semantic_form_for(@blog, :url => admin_blogs_path) do |form| %>
 
-      <ul>
-      <% @blog.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
+  <% form.inputs :name => "Basic" do %>
+    <%= form.input :title %>    
   <% end %>
 
-  <div class="field">
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <% form.buttons do %>
+    <%= form.commit_button %>
+  <% end %>
+
 <% end %>
