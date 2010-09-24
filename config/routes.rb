@@ -46,7 +46,8 @@ Johnbentcope::Application.routes.draw do |map|
   get "blogs/show"
   get "index/links"
   
-  get"index/blogindex"
+  get"blogs/index"
+	get"blogs/show"
   
   get"index/portfolioindex"
   

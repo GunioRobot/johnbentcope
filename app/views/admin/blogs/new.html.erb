@@ -1,5 +1,29 @@
 <h1>New blog</h1>
 
-<%= render 'form' %>
+  <% semantic_form_for @blog do |form| %>
+
+    <% form.inputs :name => "Basic" do %>
+      <%= form.input :title %>
+      <%= form.input :body %>
+      <%= form.input :publication_state, :as => :radio %>
+    <% end %>
+
+    <% form.inputs :name => "Advanced" do %>
+      <%= form.input :keywords, :required => false, :hint => "Example: ruby, rails, forms" %>
+      <%= form.input :extract, :required => false %>
+      <%= form.input :description, :required => false %>
+      <%= form.input :url_title, :required => false %>
+    <% end %>
+
+    <% form.inputs :name => "Author", :for => :author do |author_form| %>
+      <%= author_form.input :first_name %>
+      <%= author_form.input :last_name %>
+    <% end %>
+
+    <% form.buttons do %>
+      <%= form.commit_button %>
+    <% end %>
+
+  <% end %>
 
 <%= link_to 'Back', blogs_path %>
