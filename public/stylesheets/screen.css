@@ -1,6 +1,5 @@
 body {
 	font-family: 'Avant Garde', 'Century Gothic',sans-serif;
-	background-color: rgb(255, 156, 13);
 	background-image: url('/images/orchid_dew_adjusted.jpg');
 	margin: 0;
 	padding: 0;
@@ -10,13 +9,16 @@ body {
 		
 	}
 
-	.sidebar {
+	#sidebars {
 		position: relative;
 		z-index: 1;
 		padding: 10px;
 		width: 200px;
 		margin-top: 40px;
 		margin-left: 40px;
+		height: 600px;
+		background-color: white;
+		float: left;
 	}
 	.sidebar-background {
 		position: absolute;
@@ -33,7 +35,7 @@ body {
 	.link {
 		color: black;
 	}
-	
+/*	
 	#blog-items {
 		position: absolute;
 		top: -10px;
@@ -43,7 +45,17 @@ body {
 		margin: 50px 0 0 50px;
 		width: 630px;
 	}
-		.blog-item {
+		.blog-item {  .blog-item {
+		position: relative;
+		width: 175px;
+		height: 150px;
+		margin-bottom: 10px;
+		margin-left: 10px;
+		padding: 12px;
+		background-color: white;
+		border: solid black;
+		float: left;
+  }
 			position: relative;
 			z-index: 1;
 			padding: 10px;
@@ -53,30 +65,31 @@ body {
 			margin: 0 15px 15px 0;
 			font-size: 2em;
 			line-height: 100%;
-			color: rgb(176, 102, 0);
+			color: white;
 		}
-
+(479) 586-1377, 
 		.blog-item-background {
 			position: absolute;
 			top: 0;
 			right: 0;
 			bottom: 0;
-			left: 0;
 			background: #FFF;
 			color: #FFF;
-			opacity: 0.55;
+			opacity: 0.55;8
 			z-index: -1;
+			border: double;
+			border-color: black;
 		}
 
 		.blog-page-nav {
 			position: relative;
 			z-index: 1;
-			padding: 5px;
+			padding: 5px;(479) 586-1377, 
 			float: left;
 			margin: 0 15px 15px 0;
 			font-size: 1.5em;
 			line-height: 100%;
-			color: rgb(176, 102, 0);
+			color: white;
 		}
 		
 		.blog-nav-background {
@@ -89,11 +102,59 @@ body {
 			color: #FFF;
 			opacity: 0.55;
 			z-index: -1;
-		}
+		width: 175px;
+		height: 150px;
+		margin: 10px;
+		padding: 12px;
+		background-color: white;
+		border: solid black;
+		float: left;
+		}*/
+
+  #blog-items {
+		position: absolute;
+		margin-top: 40px;
+		margin-left: 300px;
+		width: 800px;
+		height: 630px;
+  }
+
+  .blog-item {
+		font-family: 'Avant Garde', 'Century Gothic',sans-serif;
+		position: relative;
+		width: 175px;
+		height: 150px;
+		margin-bottom: 10px;
+		margin-left: 10px;
+		padding: 12px;
+		background-color: rgba(255, 255, 255, .55);
+		float: left;
+  }
+
+  .blog-item:hover {
+		position: relative;
+		width: 175px;
+		height: 150px;
+		margin-bottom: 10px;
+		margin-left: 10px;
+		padding: 12px;
+		float: left;
+		background-color: rgba(255, 255, 255, .75);
+  }
 
 	#search {
   	margin: 28px 0 30px 14px;
   }
+
+#footer {
+	font-family:"Georgia";
+	line-height: 16px;
+	font-size: 10px;
+	color: #FFFFFF;
+	margin-bottom: 10px;
+	padding: 40px 40px 23px 50px;
+}
+
 
 ul#nav {
 	list-style: none;
@@ -108,6 +169,8 @@ li {
 
 li.selected {
 	color: white;
+Older posts?
+.
 }
 
 li.categoryitem {

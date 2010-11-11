@@ -1,48 +1,54 @@
 <body>
-	<div class="sidebar"> 
+	<div id="sidebars"> 
 		<div id="left_sidebar">
-					<a class="noborder"><img src="/images/avatar.jpg" width="200" height="200" /></a>
-		
-				<div class="padd">
-					This blog is a personal collection on design, my inspiration, photography and music.
+			<a class="noborder"><img src="/images/avatar.jpg" width="200" height="200" /></a>
+			<div class="padd">
+				This blog is a personal collection on design, my inspiration, photography and music.
+			</div>
 
-				</div>
-		
-				<div class="search">
-				  <form id="form_search" action="http://blog.johnbentcope.com/index.php" method="get">
-				 		<div>
-				  		<input value="" name="s" id="s" class="search"> <a href="javascript:document.getElementById('form_search').submit();">Search</a>
-							</div>
-						</form>
+			<div class="search">
+				<form id="form_search" action="http://blog.johnbentcope.com/index.php" method="get">
+					<div>
+			  		<input value="" name="s" id="s" class="search"> <a href="javascript:document.getElementById('form_search').submit();">Search</a>
 					</div>
-		
-				<div class="padd">
-					<strong>Categories</strong>
-				  <ul>
-					<li><%= link_to "design", blogs_path, :id => 'designblog', :class => "blognav" %></li>
-					<li><%= link_to "inspiration", blogs_path, :id => 'inspirationblog', :class => "blognav" %></li>
-					<li><%= link_to "photography", blogs_path, :id => 'photographyblog', :class => "blognav" %></li>
-					<li><%= link_to "music", blogs_path, :id => 'musicblog', :class => "blognav" %></li>
-					<li><%= link_to "projects", blogs_path, :id => 'projectsblog', :class => "blognav" %></li>
-				 	 </ul>
+				</form>
+			</div>
+		 
+			<div class="padd">
+				<strong>Categories</strong>
+			  <ul>
+				<li><%= link_to "design", blogs_path, :id => 'designblog', :class => "blognav" %></li>
+				<li><%= link_to "inspiration", blogs_path, :id => 'inspirationblog', :class => "blognav" %></li>
+				<li><%= link_to "photography", blogs_path, :id => 'photographyblog', :class => "blognav" %></li>
+				<li><%= link_to "music", blogs_path, :id => 'musicblog', :class => "blognav" %></li>
+				<li><%= link_to "projects", blogs_path, :id => 'projectsblog', :class => "blognav" %></li>
+				</ul>
 			</div>
 		</div>
-		<div class="sidebar-background">.</div>
 	</div>
-	<div id="blog-items"> 
-	<div class="blog-item">
+</div>
+	<div id="blog-items" > 
 		<% @blogs.each do |blog| %>
-		<tr>
-		<td><%= blog.title %></td>
-		<td><%= link_to'Show',blog %></td>
-		</tr>
+			<div class="blog-item">
+				<tr>
+				<td><%= blog.title %></td>
+				<td><%= link_to'Show',blog %></td>
+				</tr>
+			</div>
 		<% end %>
-		<div class="blog-item-background">.</div>
-	</div>
+		<div class="blog-item">  
+			Older posts?
+ 		</div>
+
  
-		<div class="blog-page-nav">  
-		Older posts?
-		<div class="blog-nav-background">.</div> 
-		</div>     
-  </div> 
+	
+
+	<!-- <div id="footer">
+		<p>
+			© Copyright 2010 - John Bent Cope | Share-Alike <br><br>
+			Design - John Bent Cope <br>
+			Text "johnbentcope" to 50500 for my card (I don't kill trees, that makes me better than those other guys)
+		</p>
+	</div> -->
+
 </body>

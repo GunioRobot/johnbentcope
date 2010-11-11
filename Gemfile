@@ -11,7 +11,6 @@ gem 'ruby-debug', "= 0.10.0"
 # gem 'bj'
 # gem 'aws-s3', :require => 'aws/s3'
 
-gem 'acts-as-taggable-on'
 gem 'formtastic', '>= 1.1.0', :git => "http://github.com/justinfrench/formtastic.git"
 
 # Bundle gems for certain environments:

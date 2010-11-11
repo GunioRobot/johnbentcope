@@ -2,7 +2,7 @@ class BlogsController < ApplicationController
   # GET /blogs
   # GET /blogs.xml
   def index
-    @blogs = Blog.all
+    @blogs = Blog.all.reverse[0..7]
 
     respond_to do |format|
       format.html # index.html.erb

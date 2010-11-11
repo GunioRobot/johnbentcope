@@ -1,7 +1,7 @@
 class CreateBlogs < ActiveRecord::Migration
-  def self.up
-    create_table :blogs do |t|
-      t.string :title
+		def self.up
+		create_table :blogs do |t|
+			t.string :title
 
       t.timestamps
     end
