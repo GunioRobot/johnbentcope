@@ -11,7 +11,7 @@ Johnbentcope::Application.routes.draw do |map|
     
   get"index/portfolioindex"
   
-  map.root :controller => "blogs", :action => "index"
+  map.root :controller => "index", :action => "blogs"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
