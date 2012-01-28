@@ -6,7 +6,7 @@ body {
 
 }
 	.bg_image {
-		
+
 	}
 
 	#sidebars {
@@ -31,17 +31,17 @@ body {
 		opacity: 0.55;
 		z-index: -1;
 	}
-	
+
 	.link {
 		color: black;
 	}
-/*	
+/*
 	#blog-items {
 		position: absolute;
 		top: -10px;
 		left: 250px;
 		z-index: 1;
-		
+
 		margin: 50px 0 0 50px;
 		width: 630px;
 	}
@@ -67,7 +67,7 @@ body {
 			line-height: 100%;
 			color: white;
 		}
-(479) 586-1377, 
+(479) 586-1377,
 		.blog-item-background {
 			position: absolute;
 			top: 0;
@@ -84,14 +84,14 @@ body {
 		.blog-page-nav {
 			position: relative;
 			z-index: 1;
-			padding: 5px;(479) 586-1377, 
+			padding: 5px;(479) 586-1377,
 			float: left;
 			margin: 0 15px 15px 0;
 			font-size: 1.5em;
 			line-height: 100%;
 			color: white;
 		}
-		
+
 		.blog-nav-background {
 			position: absolute;
 			top: 0;

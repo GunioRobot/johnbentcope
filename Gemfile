@@ -24,7 +24,7 @@ group :test do
   gem "capybara"
   gem "launchy"
 
-  gem "rspec-rails", ">= 2.0.0.beta.17"  
+  gem "rspec-rails", ">= 2.0.0.beta.17"
 
   gem 'webrat',             ">= 0.7.2.beta.1"
 end
